@@ -90,12 +90,24 @@
     </build>
     <repositories>
         <repository>
-            <id>maven-repository</id>
+            <id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>tenstone-mvn-repo</id>
             <url>https://raw.github.com/tenstone/mvn-repo/master/</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
+
     </repositories>
 </project>

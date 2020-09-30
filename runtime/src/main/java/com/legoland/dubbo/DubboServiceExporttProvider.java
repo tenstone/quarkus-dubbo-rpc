@@ -36,7 +36,8 @@ public class DubboServiceExporttProvider {
 
     @PostConstruct
     public void exportStart() {
-        Set<Bean<?>> beans = CDI.current().getBeanManager().getBeans(Object.class, new AnnotationLiteral<Any>() {
+        Set<Bean<?>> beans = CDI.current().getBeanManager().getBeans(Object.class,
+                new AnnotationLiteral<Any>() {
         });
         for (Bean<?> bean : beans) {
             DubboService dubboService = bean.getBeanClass().getAnnotation(DubboService.class);
@@ -66,7 +67,6 @@ public class DubboServiceExporttProvider {
     }
 
     private void bindParams(ServiceConfig<Object> target, DubboService orign) {
-
         target.setRetries(orign.retries());
         target.setGroup(orign.group());
         if (orign.timeout() != 0) {
