@@ -1,4 +1,4 @@
-package org.github.keking.dubbo;
+package com.legoland.dubbo;
 
 import io.quarkus.arc.Arc;
 import io.quarkus.arc.InstanceHandle;

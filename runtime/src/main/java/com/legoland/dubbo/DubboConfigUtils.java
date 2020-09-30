@@ -1,4 +1,4 @@
-package org.github.keking.dubbo;
+package com.legoland.dubbo;
 
 import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.ProtocolConfig;

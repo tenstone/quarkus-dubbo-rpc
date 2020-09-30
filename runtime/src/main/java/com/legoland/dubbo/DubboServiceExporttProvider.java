@@ -1,4 +1,4 @@
-package org.github.keking.dubbo;
+package com.legoland.dubbo;
 
 import io.quarkus.runtime.Startup;
 import org.apache.dubbo.common.utils.StringUtils;

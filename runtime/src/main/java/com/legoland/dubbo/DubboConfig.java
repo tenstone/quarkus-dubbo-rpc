@@ -1,4 +1,4 @@
-package org.github.keking.dubbo;
+package com.legoland.dubbo;
 
 import io.quarkus.runtime.annotations.ConfigGroup;
 import io.quarkus.runtime.annotations.ConfigItem;
