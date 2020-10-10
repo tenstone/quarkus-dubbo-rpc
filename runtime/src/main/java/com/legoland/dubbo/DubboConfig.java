@@ -26,7 +26,7 @@ public class DubboConfig {
      * 注册中心地址
      */
     @ConfigItem
-    public Optional<String> registrAddr;
+    public Optional<String> registryAddr;
 
     public Protocol protocol;
 

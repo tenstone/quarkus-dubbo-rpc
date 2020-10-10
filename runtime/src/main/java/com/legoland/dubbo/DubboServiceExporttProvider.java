@@ -29,7 +29,7 @@ import java.util.Set;
 @Startup
 public class DubboServiceExporttProvider {
 
-    private Logger logger = LoggerFactory.getLogger(DubboReferenceProvider.class);
+    private final Logger logger = LoggerFactory.getLogger(DubboReferenceProvider.class);
 
     @Inject
     DubboConfig dubboConfig;

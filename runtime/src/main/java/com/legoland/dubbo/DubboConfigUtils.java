@@ -35,7 +35,7 @@ public class DubboConfigUtils {
     public static RegistryConfig registryConfig(DubboConfig dubboConfig) {
         if (registryConfig == null) {
             RegistryConfig config = new RegistryConfig();
-            config.setAddress(dubboConfig.registrAddr.get());
+            config.setAddress(dubboConfig.registryAddr.get());
             registryConfig = config;
             return config;
         }
