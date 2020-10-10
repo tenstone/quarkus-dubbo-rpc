@@ -47,6 +47,7 @@ public class DubboConfigUtils {
             ProtocolConfig protocol = new ProtocolConfig();
             protocol.setName(dubboConfig.protocol.name.get());
             protocol.setPort(dubboConfig.protocol.port.getAsInt());
+            protocol.setSerialization(dubboConfig.protocol.serialization.get());
             protocolConfig = protocol;
             return protocol;
         }

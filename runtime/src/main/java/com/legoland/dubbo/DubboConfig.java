@@ -45,5 +45,11 @@ public class DubboConfig {
         @ConfigItem(defaultValue = "dubbo")
         public Optional<String> name;
 
+        /**
+         * 序列化
+         */
+        @ConfigItem(defaultValue = "protobuf")
+        public Optional<String> serialization;
+
     }
 }
